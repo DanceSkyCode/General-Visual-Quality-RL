@@ -31,7 +31,7 @@ Method Overview. (a) Existing score/ranking reward function assign minimal diffe
 </div>
 </div>
 
-Overall training framework of PreResIQA-R1 via RL2RS. Given an image batch ($\mathcal{I_j}$, $\mathcal{I}_{j+1}$,..., $\mathcal{I}_{j+B})$ with a shared text prompt $\mathcal{P}$, PreResIQA-R1 generates K responses. To quickly activate CoT differences and then access generation stability, we introduce the response penalty and fine-grained triplet-response balance reward. To jointly enhance the robustness of ranking and score ability, we introduce the preference pairwise-and-triplet score-and-ranking reward for GRPO.
+Overall training framework of PreResIQA-R1 via RL2RS. Given an image batch with a shared text prompt, PreResIQA-R1 generates K responses. To quickly activate CoT differences and then access generation stability, we introduce the response penalty and fine-grained triplet-response balance reward. To jointly enhance the robustness of ranking and score ability, we introduce the preference pairwise-and-triplet score-and-ranking reward for GRPO.
 
 
 <div align="center">
