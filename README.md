@@ -1,0 +1,107 @@
+<div align="center">
+
+<h2 style="border-bottom: 1px solid lightgray;">👀✨🖼️Towards Fine-Grained Rank-and-Score Reinforcement Learning for Image Quality Assessment via Preference–Response Disentangled Policy Optimization</h2>
+</div>
+
+
+<!-- Badges and Links Section -->
+<div style="display: flex; align-items: center; justify-content: center;">
+
+
+
+
+</div>
+
+<br/>
+
+
+<div align="center">
+<!--  -->
+<div>
+<img src="docs/statics/Overall.png" alt="fig-genexample" style="max-width: 80%; height: auto;"/>  
+</div>
+
+</div>
+
+Method Overview. (a) Existing score/ranking reward function assign minimal difference, which results in distribution fall or robustness fail. (b) PreResIQA-R1 focus on fine-grained response-ranking reward balance and preference. (c) PreResIQA-R1 enables state-of-the-art performance and stable image quality assessment with discriminative reward. (d) typical qualitative and quantitative example comparison between VisualQuality-R1 and PreResIQA-R1, which demonstrates superior performance on image quality describe and score.
+
+<div align="center">
+<div>
+<img src="docs/statics/IQA_Model.png" alt="Framework" style="max-width: 80%; height: auto;"/>
+</div>
+</div>
+
+Overall training framework of PreResIQA-R1 via RL2RS. Given an image batch ($\mathcal{I_j}$, $\mathcal{I}_{j+1}$,..., $\mathcal{I}_{j+B})$ with a shared text prompt $\mathcal{P}$, PreResIQA-R1 generates K responses. To quickly activate CoT differences and then access generation stability, we introduce the response penalty and fine-grained triplet-response balance reward. To jointly enhance the robustness of ranking and score ability, we introduce the preference pairwise-and-triplet score-and-ranking reward for GRPO.
+
+
+<div align="center">
+<div>
+<img src="docs/statics/IQA_PRPO.png" alt="Framework" style="max-width: 80%; height: auto;"/>
+</div>
+</div>
+Pipeline of the Preference-Response Disentangled Policy Optimization (PRPO), which applies response ranking response balance reward, and preference pairwise score and ranking reward, and preference triplet ranking reward to optimize group policy learning.
+
+
+<!-- ## News -->
+<h2 style="border-bottom: 1px solid lightgray; margin-bottom: 5px;">✨ Update</h2>
+
+* **2025/10/27** 🤗🤗🤗 we are ready to release the PreResIQA-R1 model weight.
+* **2025/10/25** 💻💻💻 we release training and evaluation code.
+
+
+
+<!-- ## Environment setup -->
+<h2 style="border-bottom: 1px solid lightgray; margin-bottom: 5px;">🔧Environment setup</h2>
+
+quickly create a conda environment that contains the packages necessary to run our scripts on A100 and A800 GPUs.
+
+```
+conda create -n PreResIQA python=3.11
+conda activate PreResIQA
+
+bash setup.sh
+```
+
+
+
+
+<!-- We will release the processed data (such as THINGS-EEG1, THINGS-EEG2, THINGS-MEG, THINGS-fMRI) on [Huggingface], which can be directly used for training.
+ -->
+
+
+<!-- ## Quick training and test  -->
+<h2 style="border-bottom: 1px solid lightgray; margin-bottom: 5px;">🚀Quick training and test</h2>
+
+
+#### 1.Quick Reinforcement-Learning Fine-Tuning Start
+
+```
+bash run_scripts\KADID-10K\one_node_run_kadid_preres_r1.sh
+--model_name_or_path [ Qwen2.5-VL-7B-Instruct path] \
+--image_folders [dataset images path] \
+--data_file_paths [JSON MOS_Ground_Truth file path] \
+```
+#### 2.Multi-modal Fine-Tuning
+
+```
+python src\inference.py
+--MODEL_PATH [ PreResIQA-R1_path] \
+--image_root_path [ test_image_root_path] \
+--output_root_path [ output_root_path]
+```
+
+
+<!-- ## Acknowledge -->
+<h2 style="border-bottom: 1px solid lightgray; margin-bottom: 5px;">😺Acknowledge</h2>
+
+We sincerely thank the following outstanding works and contributors:  
+
+
+1. **Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank**.   Authors: Tianhe Wu, Jian Zou, Jie Liang, Lei Zhang, Kede Ma.  
+
+2. **VLM-R1: A stable and generalizable R1-style Large Vision-Language Model**  Authors: Haozhan Shen, Peng Liu, Jingcheng Li, Chunxin Fang, Yibo Ma, Jiajia Liao, Qiaoli Shen, Zilun Zhang, Kangjia Zhao, Qianqian Zhang, Ruochen Xu, Tiancheng Zhao
+
+---
+
+# 🏷️ License
+This repository is released under the MIT license. See [LICENSE](./LICENSE) for additional details.
