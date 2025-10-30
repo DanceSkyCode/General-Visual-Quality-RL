@@ -2,7 +2,7 @@
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
   
-  <meta name="description" content="👀✨🖼️PreResQ-R1: Towards Fine-Grained Rank-and-Score Reinforcement Learning for Image Quality Assessment via Preference–Response Disentangled Policy Optimization">
+  <meta name="description" content="👀✨🖼️PreResQ-R1: Towards Fine-Grained Rank-and-Score Reinforcement Learning for Image Quality Assessment via Preference-Response Disentangled Policy Optimization">
   <meta name="keywords" content="reinforcement learning; ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bratrix</title>
@@ -100,9 +100,9 @@
               <span class="author-block">
             <br>  
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Tian Qiu</b></a><sup>1</sup><sup>†</sup>,</span>
-              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Tong Wu</b></a><sup>1</sup><sup>†</sup>,</span>
-              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Huayuan Xu</b></a><sup>1</sup><sup>†</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Tian Qiu</b></a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Tong Wu</b></a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=sg4vxPoAAAAJ&hl=en"><b>Huayuan Xu</b></a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://www.scopus.com/authid/detail.uri?authorId=55425962400"><b>Ting Han</b></a><sup>1,3</sup><sup>†</sup></span>
             
@@ -110,8 +110,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Shanghai Jiao Tong University,</span> 
-            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Nanyang Technology University,</span><br>
-            <span class="author-block" style="margin-right: 15px;"><sup>3</sup>Zhejiang University,</span>
+            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Zhejiang University,</span>
             <span class="paper-block"><sup>†</sup>Corresponding Author,  Under Review</b></span>
           </div>
 <!--           <span class=""><sup>*</sup>Equal Contribution</span>
@@ -122,7 +121,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://github.com/DanceSkyCode/Bratrix" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/DanceSkyCode/General-Visual-Quality-RL" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -131,7 +130,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/DanceSkyCode/Bratrix" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/DanceSkyCode/General-Visual-Quality-RL" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -140,7 +139,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/DanceSkyCode/Bratrix/tree/main" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://huggingface.co/DanceSkyCode/PreResIQA-R1" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
                       <p style="font-size:18px">🤗</p>
@@ -149,15 +148,6 @@
                   <span>Checkpoints</span>
                 </a>
               </span> 
-
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/DanceSkyCode/Bratrix" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <!-- <i class="far fa-images"></i> -->
-                      <p style="font-size:18px">🤗</p>
-                      <!-- 🔗 -->
-                  </span>
-                  <span>Dataset</span>
                 </a>
               </span> 
 
@@ -177,17 +167,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="content has-text-centered">
-      <img src="static/images/Performance.png" alt="data-overview">
+      <img src="statics/Overall.png" alt="data-overview">
     </div>
     <div class="hero-body">
       <h2 class="subtitle has-text-justified">
         <p class="has-text-left">
-          <b>Comprehensive qualitative performance of Bratrix.</b><br>
-          (a) Top-10 retrieval visualization of EEG signals.<br>
-          (b) Multimodal Semantics, uncertainty, Text-EEG matrix explainable visualization.<br>
-          (c) Comparison example performance with competitive methods. Bratrix shows the most relevant Top-5 images.<br>
-          (d) Module Ablation Performance in Bratrix.<br>
-          (e) Representation similarity matrix in EEG, MEG, and fMRI signals. Test images are divided into 6 categories.
+          <b>Overall Performance.</b><br>
+          (a) Existing score/ranking reward function assign minimal difference, which results in distribution fall or robustness fail. <br>
+          (b) PreResQ-R1 focus on fine-grained response-ranking reward balance and preference. <br>
+          (c) PreResQ-R1 enables state-of-the-art performance and stable image quality assessment with discriminative reward.<br>
+          (d) typical qualitative and quantitative example comparison between VisualQuality-R1 and PreResQ-R1, which demonstrates superior performance on image quality describe and score.
         </p>
       </h2>
     </div>
@@ -206,7 +195,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
             <p>
-              Unveiling visual semantics from neural signals such as EEG, MEG, and fMRI remains a fundamental challenge due to subject variability and the entangled nature of visual features. Existing approaches primarily align neural activity directly with visual embeddings, but visual-only representations often fail to capture latent semantic dimensions, limiting interpretability and robustness. To address these limitations, we propose \textbf{Bratrix}, the first end-to-end framework to achieve Language-Anchored Vision–Brain alignment. Bratrix decouples visual stimuli into hierarchical visual and language semantic components and maps both visual and brain representations into a shared latent space, producing aligned visual–language and brain–language embeddings. To emulate human-like perceptual reliability and handle noisy neural signals, Bratrix incorporates a novel uncertainty perception module that applies uncertainty-aware weighting during alignment. By leveraging learnable language-anchored semantic matrices to enhance cross-modal correlations and employing a two-stage training strategy of single-modality pretraining followed by multimodal fine-tuning, \textbf{Bratrix-M} improves alignment precision. Extensive experiments on EEG, MEG, and fMRI benchmarks demonstrate that Bratrix substantially improves retrieval, reconstruction, and captioning performance compared to state-of-the-art methods, and that joint modeling in the multimodal semantic space further enhances brain–visual alignment. Code is publicly available
+              Visual Quality Assessment (QA) seeks to predict human perceptual judgments of visual fidelity. While recent multimodal large language models (MLLMs) show promise in reasoning about image and video quality, existing approaches mainly rely on supervised fine-tuning or rank-only objectives, resulting in shallow reasoning, poor score calibration, and limited cross-domain generalization. We propose PreResQ-R1, a Preference–Response Disentangled Reinforcement Learning framework that unifies absolute score regression and relative ranking consistency within a single reasoning-driven optimization scheme. Unlike prior QA methods, PreResQ-R1 introduces a dual-branch reward formulation that separately models intra-sample response coherence and inter-sample preference alignment, optimized via Group Relative Policy Optimization (GRPO). This design encourages fine-grained, stable, and interpretable chain-of-thought reasoning about perceptual quality. To extend beyond static imagery, we further design a global–temporal and local–spatial data flow strategy for Video Quality Assessment. Remarkably, with reinforcement fine-tuning on only 6K images and 28K videos, PreResQ-R1 achieves state-of-the-art results across 10 IQA and 5 VQA benchmarks under both PLCC and SRCC metrics. Beyond quantitative gains, it produces human-aligned reasoning traces that reveal the perceptual cues underlying quality judgments. Code and model are available.
             </p>
         </div>
 
@@ -427,8 +416,8 @@
     <pre><code>
 
 @article{Bratrix,
-  title={Unveiling Deep Semantic Uncertainty Perception for Language-Anchored Multi-modal Vision-Brain Alignment},
-  author={Zehui Feng, Cuntai Guan, Ting Han},
+  title={PreResQ-R1: Towards Fine-Grained Rank-and-Score Reinforcement Learning for Image Quality Assessment via Preference–Response Disentangled Policy Optimization},
+  author={Zehui Feng, Tian Qiu, Tong Wu, Huayuan Xu, Ting Han},
   journal={arXiv preprint arXiv:},
   year={2025}
 }
