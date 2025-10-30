@@ -1,7 +1,6 @@
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 from tqdm import tqdm
-
 import torch
 import random
 import re
@@ -90,7 +89,7 @@ def score_batch_image(image_paths, model, processor):
 
 
 random.seed(1)
-MODEL_PATH = "Qwen2.5-VL-7B-Instruct"
+MODEL_PATH = "your_PreResIQA_R1_path"
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
 
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(

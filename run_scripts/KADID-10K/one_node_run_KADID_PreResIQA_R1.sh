@@ -10,14 +10,14 @@ torchrun --nproc_per_node="4" \
     --node_rank="0" \
     --master_addr="127.0.0.1" \
     --master_port="12345" \
-    src/open_r1/grpo_preres_r1.py \
+    src/open_r1/grpo_preres_IQA_r1.py \
     --deepspeed local_scripts/zero3.json \
     --output_dir output/$RUN_NAME \
     --model_name_or_path /Qwen2.5-VL-7B-Instruct\
     --question_template scoring \
     --dataset_name KADID-10K \
     --image_folders /images \
-    --data_file_paths /RL-KADID-10K_train_scoring.jsonl \
+    --data_file_paths datasets/KADID-10K/scoring/RL-KADID-10K_train_scoring_5aware.jsonl \
     --freeze_vision_modules false \
     --max_prompt_length 1024 \
     --num_generations 6 \
