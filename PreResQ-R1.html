@@ -223,8 +223,9 @@
     
     <div class="hero-body">
       <h2 class="has-text-justified" style="margin-top: -1cm;">
-        <p class="">🌟🌟🌟 Overall Framework of Bratrix. Bratrix comprises Vision semantic decoupling pipeline, a Brain encoder pipeline, a language semantic decoupling pipeline, and a language-anchored visual-brain alignment. <br>
-          🌟🌟🌟 There are totally four stages in this framework: single-modal per-training phase, multi-modal fine-tuning phase, inference phase, and downstream task phase. </p>
+        <p class="">🌟🌟🌟 Overall training framework of PreResQ-R1 via RL2RS. Given an sample batch with a shared text prompt, PreResQ-R1 generates K responses.  <br>
+          🌟🌟🌟 To quickly activate CoT differences and then access generation stability, we introduce the response penalty and fine-grained triplet-response balance reward.  <br>
+          🌟🌟🌟 To jointly enhance the robustness of ranking and score ability, we introduce the preference pairwise-and-triplet score-and-ranking reward for GRPO. </p>
       </h2>
     </div>
     
@@ -235,34 +236,22 @@
 
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop" >
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Bratrix and Bratrix-M Explainable Visualization</h2>
+        <h2 class="title is-3">PRPO</h2>
 
 
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
-        <img src="./static/images/Image_T-SNE.png" alt="pipeline" >
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
-        <img src="./static/images/Image_Explain.png" alt="pipeline" >
       </div>
     </div>
     <div class="hero-body">
-      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
-        
+      <h2 class="has-text-justified" style="margin-top: -1cm;">
+        <p class="">🌟🌟🌟 Pipeline of the Preference-Response Disentangled Policy Optimization (PRPO), which applies response ranking response balance reward, and preference pairwise score and ranking reward, and preference triplet ranking reward to optimize group policy learning.</p>
       </h2>
     </div>
     
-  </div>
   </div>
 
 </section>
