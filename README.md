@@ -13,6 +13,7 @@
     <a href='https://arxiv.org/'><img src='http://img.shields.io/badge/Paper-arxiv.2599.07721-B31B1B.svg'></a>
     <a href='https://danceskycode.github.io/General-Visual-Quality-RL/PreResQ-R1'> <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
     <a href='https://github.com/DanceSkyCode/General-Visual-Quality-RL/tree/main/Ground-truth'><img src='https://img.shields.io/badge/Dataset-Label-orange' alt='Project Page'></a>
+    <a href='https://huggingface.co/DanceSkyCode/PreResIQA-R1'><img src='https://img.shields.io/badge/Checkpoint_PreResQ_R1-%F0%9F%A4%97%20Hugging%20Face-blue'></a>
   </p>
 </p>
 
