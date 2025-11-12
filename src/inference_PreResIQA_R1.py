@@ -21,7 +21,8 @@ def get_image_paths(folder_path):
 
 def score_batch_image(image_paths, model, processor):
     PROMPT = (
-        "You are doing the image quality assessment task. Compare the two distorted images and answer in five parts:"
+        # "You are doing the image quality assessment task. Compare the two distorted images and answer in five parts:"
+        "You are doing the image quality assessment task. Describe and rate the image in five parts:"
         "saturation rating; granularity rating; sharpness rating; foreground rating; and background rating." 
         "All ratings should be floats between 1 and 5, rounded to two decimals, where 1 represents very poor quality and 5 represents excellent quality."
     )
