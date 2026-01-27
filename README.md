@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2 style="border-bottom: 1px solid lightgray;">👀✨🖼️PreResQ-R1: Towards Fine-Grained Rank-and-Score Reinforcement Learning for Image Quality Assessment via Preference–Response Disentangled Policy Optimization</h2>
+<h2 style="border-bottom: 1px solid lightgray;">👀✨🖼️Disentangled Reinforcement Learning for Robust Visual Quality Assessment</h2>
 </div>
 
 
